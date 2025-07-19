@@ -1,0 +1,56 @@
+<!Doctype html>
+<html lang="en">
+    <head>
+        <title>Tip calculator</title>
+        <link rel="stylesheet" href="form.css">
+    </head>
+    <body>
+        <div>
+            
+            <div class="flex-item1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeJnSdIZRqP_XenivD9FjQLPcbWvvmPxkXjg&s" alt="calc" height="60" width="60"/>
+                
+            </div>
+            <h3>Tip Calculator</h3>
+            <div class="flex">
+            <div>
+                <form class="flex-item2" id="billAmount">
+                    <label>Bill Amount</label><br><br>
+                    <input type="text"/>
+                </form>
+            </div>
+            <div>
+                <form class="flex-item3" id="percentageTip">
+                    <label>Percentage tip</label><br><br>
+                    <input type="text"/>
+                </form>
+            </div>
+            </div>
+            <div class="box">
+                <div >
+                    <form class="flex-item4" id="tipAmount">
+                        <label>Tip Amount</label><br><br>
+                        <input type="text"/>
+                    </form>
+                </div>
+                <div>
+                    <form class="flex-item5" id="Total">
+                        <label>Total</label><br><br>
+                        <input type="text"/>
+                    </form>
+                </div>
+            </div>
+            </div>
+            
+            <div>
+                
+                <form class="flex-item6">
+                    
+                    <input  onclick="calculateTip()" id="calculateButton()" style="background-color:#17a2b8 ;" type="button" name="Calculate" value="calculate"/>
+                    <p class="errorMessage" id="errorMessage"></p>
+                </form>
+            </div>
+        </div>
+        <script src="form.js"></script>
+    </body>
+</html>
